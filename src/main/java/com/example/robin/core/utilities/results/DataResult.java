@@ -1,5 +1,7 @@
 package com.example.robin.core.utilities.results;
 
+import org.springframework.context.annotation.Bean;
+
 public class DataResult<T> extends Result {
     private T data;
 

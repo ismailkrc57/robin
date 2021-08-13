@@ -1,5 +1,8 @@
 package com.example.robin.core.utilities.results;
 
+import org.springframework.context.annotation.Bean;
+
+
 public class Result {
     private boolean success;
     private String message;
