@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 @CrossOrigin
 @RestController
-@CrossOrigin
 @RequestMapping("api/waiters")
 public class WaiterController {
     private IWaiterService iWaiterService;
