@@ -3,7 +3,6 @@ package com.example.robin.api.controller;
 import com.example.robin.business.abstracts.IWaiterService;
 import com.example.robin.core.utilities.results.DataResult;
 import com.example.robin.core.utilities.results.Result;
-import com.example.robin.core.utilities.results.SuccessDataResult;
 import com.example.robin.entities.concretes.Waiter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
