@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin
 @RequestMapping("api/waiters")
 public class WaiterController {
     private IWaiterService iWaiterService;
@@ -33,5 +34,10 @@ public class WaiterController {
     @GetMapping("getbyid")
     public DataResult<Waiter> getById(@RequestParam int id){
         return iWaiterService.getById(id);
+    }
+
+    @GetMapping("/getByIdAndPassword")
+    public DataResult<Waiter> getByUserNameAndPassword(@RequestParam String userName,@RequestParam String password){
+        return iWaiterService.getByUserNameAndPassword(userName,password);
     }
 }

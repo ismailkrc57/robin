@@ -8,6 +8,7 @@ import com.example.robin.core.utilities.results.SuccessResult;
 import com.example.robin.dataAccess.abstracts.IWaiterDao;
 import com.example.robin.entities.concretes.Waiter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.support.DaoSupport;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -35,5 +36,10 @@ public class WaiterManager implements IWaiterService {
     @Override
     public DataResult<Waiter> getById(int id) {
         return new SuccessDataResult<>(iWaiterDao.getById(id));
+    }
+
+    @Override
+    public DataResult<Waiter> getByUserNameAndPassword(String userName, String password) {
+        return new SuccessDataResult<>(iWaiterDao.getByUserNameAndPassword(userName,password));
     }
 }
