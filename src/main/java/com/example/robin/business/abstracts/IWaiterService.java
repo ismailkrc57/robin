@@ -11,6 +11,6 @@ public interface IWaiterService {
     DataResult<List<Waiter>> getAll();
     Result add(Waiter waiter);
     DataResult<Waiter> getById(int id);
-    DataResult<Waiter> getByUserNameAndPassword(String userName, String password);
+    DataResult<Waiter> getByUserNameAndPassword(String username, String password);
 
 }
