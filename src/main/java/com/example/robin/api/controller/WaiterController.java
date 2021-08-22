@@ -34,7 +34,7 @@ public class WaiterController {
         return iWaiterService.getById(id);
     }
 
-    @GetMapping("/getByIdAndPassword")
+    @PostMapping("/login")
     public DataResult<Waiter> getByUserNameAndPassword(@RequestParam String username,@RequestParam String password){
         return iWaiterService.getByUserNameAndPassword(username,password);
     }
